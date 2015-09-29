@@ -43,4 +43,21 @@ What was confusing about this material? What made sense?
 
 	The most confusing part was why rspec failed when using puts in the method. I still don't know why so I'll be goign to tonight's office hours :)
 	
+4.3.1
+
+https://github.com/RockinRonE/phase-0/blob/master/week-4/address/my_solution.rb
+
+
+
+4.3.2
+
+https://github.com/RockinRonE/phase-0/blob/master/week-4/math/my_solution.rb
+
+
+
+
+
+
+
+
 =end
