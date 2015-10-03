@@ -4,7 +4,7 @@
 # include it in this file. Also make sure everything that isn't code
 # is commented in the file.
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge by myself
 
 # 0. total Pseudocode
 # make sure all pseudocode is commented out!
@@ -15,10 +15,6 @@
 
 
 # 1. total initial solution
-
-
-
-# 3. total refactored solution
 def total(array)
     
     answer = 0
@@ -31,6 +27,9 @@ def total(array)
 end
 
 
+# 3. total refactored solution
+def total(array) array.reduce(:+) end
+
 # 4. sentence_maker pseudocode
 # make sure all pseudocode is commented out!
 # Input:
@@ -40,7 +39,18 @@ end
 
 # 5. sentence_maker initial solution
 
+def sentence_maker(array)
+    
+    sentence = "" 
 
+    array.each do |word|
+        sentence += word + " "  
+    end  
+
+    return sentence.capitalize
+end
+        
+  
 
 # 6. sentence_maker refactored solution
 
