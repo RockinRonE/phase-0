@@ -12,22 +12,33 @@
 
 
 # Your Solution Below
-def longest_string(list_of_words)
+# def longest_string(list_of_words)
   
+# 	longest_string = list_of_words[0] #something to compare to
+
+# 	if list_of_words.size <= 1 
+# 		return longest_string
+
+# 	elsif list_of_words.each do |word|
+# 		if word.length > longest_string.length
+# 			longest_string = word 
+# 		end
+# 	end
+# 	return longest_string
+# end
+# end 
+
+#refactored 
+
+def longest_string(list_of_words)
+
 	longest_string = list_of_words[0] #something to compare to
 
-	if list_of_words.size <= 1 
-		return longest_string
+	if list_of_words.empty? == true
+  		return nil
 
-	elsif list_of_words.each do |word|
-		if word.length > longest_string.length
-			longest_string = word 
-		end
-	end
-	return longest_string
-end
-end 
-
-
-
+  	elsif longest_string = list_of_words.max_by { |x| x.length }
+  	end
+  	return longest_string
+  end
 
