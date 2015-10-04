@@ -14,18 +14,27 @@
 
 # Your Solution Below
 
+# def count_between(list_of_integers, lower_bound, upper_bound)
+
+# 	count = 0
+
+# 	list_of_integers.each do |int|
+
+# 		if int >= lower_bound && int <= upper_bound
+# 			count += 1
+# 		elsif int == nil
+# 			return nil
+# 		end
+# 	end
+# 	return count 
+# end
+
+
+#refactored
+			
 def count_between(list_of_integers, lower_bound, upper_bound)
 
-	count = 0
+	return 0 if lower_bound > upper_bound
 
-	list_of_integers.each do |int|
-
-		if int >= lower_bound && int <= upper_bound
-			count += 1
-		elsif int == nil
-			return nil
-		end
-	end
-	return count 
+	list_of_integers.select { |num| num >= lower_bound && num <= upper_bound }.size
 end
-				
