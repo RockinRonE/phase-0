@@ -1,9 +1,3 @@
-# list = [["lemonade", 2]]
-
-# list = {
-#   lemonade: 2
-#   mango: 3
-#   }
 
 # PSUEDO
 #    Create a list
