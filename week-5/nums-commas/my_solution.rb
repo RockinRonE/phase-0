@@ -123,6 +123,7 @@ What Ruby method(s) did you use when refactoring your solution? What difficultie
 
 	I didn't refactor my solution. I don't feel I used any "fancy" Ruby methods to begin with and I can't seem to find any other Ruby methods to improve upon my code.
 
+	Please let me know if I used Ruby methods that I wasn't supposed to. I didn't think array methods were egregious. 
 
 How did you initially iterate through the data structure?
 
