@@ -87,6 +87,41 @@ print_list(list)
 
 
 
+=begin REFLECTION=======================================
+
+What did you learn about pseudocode from working on this challenge?
+
+	I learned how important it was to make it language agnostic, meaning that it should be written
+	so it can be programmed in any language. 
+
+What are the tradeoffs of using Arrays and Hashes for this challenge?
+
+	I would say that it's more programmer friendly to use hashes. I can imagine it getting tedious
+	trying to call the correct index numbers and what not. 
+
+What does a method return?
+
+	A method returns whatever expressions are within it. For example we had a method that created 
+	hash, so it returned that.
+
+What kind of things can you pass into methods as arguments?
+
+	Anything such as strings, integers, variables and, in this case, an array!(stored in a variable)
+
+How can you pass information between methods?
+
+	This was the coolest part of the GPS. You need to store the return values from the methods in 
+	variables OUTSIDE of all the methods. Variables outside the method can then be passed in as an
+	argument to other methods. We created a method that created a hash. We 
+	then stored the hash in a variable and used it to add items to it. 
+
+
+What concepts were solidified in this challenge, and what concepts are still confusing?
+
+	The biggest concept that was solified was variable scope. With that I also increased my understanding
+	of how you can pass information between methods to create some neat things. I am not (currently!)
+	confused about any concepts from this GPS.
+
 
 
 
