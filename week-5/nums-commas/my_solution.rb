@@ -111,7 +111,7 @@ end
 =begin
 What was your process for breaking the problem down? What different approaches did you consider?
 
-	I noticed that I think about the solutions for every input first off. That's not an effecient way to approach a problem. I should have broke it down to how my method would handle a particular type of input. For example if there's a 3 digit or less integer, handle that first. Then move on to the next type of input. 
+	<p>I noticed that I think about the solutions for every input first off. That's not an effecient way to approach a problem. I should have broke it down to how my method would handle a particular type of input. For example if there's a 3 digit or less integer, handle that first. Then move on to the next type of input. </p>
 
 	One approach was to iterate through the array using .each and somehow grouping the output by 3's and inserting a comma. Not sure it that's actually doable though. 
 
