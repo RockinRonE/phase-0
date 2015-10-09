@@ -19,6 +19,28 @@
 
 # 1. Initial Solution
 
+def mode(array)
+  hash = Hash.new(0) #all keys will have a value of 0
+  
+  
+  array.each {|x| hash[x] += 1 }
+  #sorts by the key 
+  final_hash = hash.sort_by {|k,v| k }
+  
+  
+  
+  final_hash.sort_by do |k,v| 
+    v 
+  end
+  
+  p final_hash.reverse!
+  
+  
+  #hashes within an array? 
+#   final_hash.reverse
+end
+
+mode(["bob", "bob", "sam", "sam", "sam", "chris"])
 
 
 
