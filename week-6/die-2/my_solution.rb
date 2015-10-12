@@ -2,7 +2,7 @@
 
 
 # I worked on this challenge [by myself, with: ].
-# I spent .5 hours on this challenge.
+# I spent 1 hours on this challenge.
 
 # Pseudocode
 
@@ -27,25 +27,28 @@ class Die
   end
 
   def roll
+    # if array has one value simply return it
     if @labels.length == 1
       return @labels[0]
     else
-      return @labels.at(rand(0..@labels.length))
+      # return random selection from array in a range of 0 to the array's length
+      return @labels[rand(0..@labels.length-1)]
+
     end
   end
 end
 
-  # die = Die.new(['A', 'B', 'C', 'D', 'E', 'F'])
-  # die = Die.new(['A'])
-  # p die.roll
+die = Die.new(['A', 'B', 'C', 'D', 'E', 'F'])
+# die = Die.new(['A'])
+ p die.sides
 
-  # Refactored Solution
-
-
+# Refactored Solution
 
 
 
 
 
 
-  # Reflection
+
+
+# Reflection
