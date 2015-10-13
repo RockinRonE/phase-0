@@ -2,18 +2,34 @@
 
 # I worked on this challenge by myself
 
-# I spent [#] hours on this challenge.
+# I spent 0.5 hours on this challenge.
 
-class NameData
+class NameData #receiver
+
+  def initialize
+    @name = "Ronny Ewanek"
+  end
+
+  def say_hello
+  	puts "Hello #{@name}! How wonderful to see you today!"
+  end
 
 end
 
 
-class Greetings
+class Greetings #emitter
 
+  def initialize
+    @namedata = NameData.new
+  end
+
+  def hello
+    puts @namedata.say_hello 
+  end
 end
 
-
+greet = Greetings.new
+greet.hello
 
 # Reflection
 =begin
@@ -60,20 +76,5 @@ Is this code simpler than the last?
 
 	Definitely.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+------------------------------------------------------------------------
+=end
