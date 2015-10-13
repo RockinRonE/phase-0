@@ -4,15 +4,13 @@
 
 # I spent 0.5 hours on this challenge.
 
-class NameData #receiver
+class NameData
+  attr_reader :name#receiver
 
   def initialize
     @name = "Ronny Ewanek"
   end
 
-  def say_hello
-  	puts "Hello #{@name}! How wonderful to see you today!"
-  end
 
 end
 
@@ -24,12 +22,20 @@ class Greetings #emitter
   end
 
   def hello
-    puts @namedata.say_hello 
+
+
+    namedata = NameData.new
+
+    puts "Hello " + namedata.name + "!" + " How wonderful to see you today."
   end
 end
 
 greet = Greetings.new
 greet.hello
+
+
+
+
 
 # Reflection
 =begin
