@@ -20,7 +20,7 @@ def serving_size_calc(item_to_make, order_quantity)
   serving_size = menu[item_to_make]
 
   leftover_qty = order_quantity % serving_size
-  
+
   servings = order_quantity/serving_size
 
   if order_quantity < serving_size
@@ -42,4 +42,50 @@ p serving_size_calc("pie", 3)
 #p serving_size_calc("THIS IS AN ERROR", 5)
 
 #  Reflection
+=begin
+What did you learn about making code readable by working on this challenge?
+
+  It's definitly important to have descriptive variable names.
+
+Did you learn any new methods? What did you learn about them?
+
+  No new methods learned :(
+
+What did you learn about accessing data in hashes? 
+
+  This exercise served as a good reminder on how to access hash data, but I didn't learn anything new in regards to hashes. 
+
+What concepts were solidified when working through this challenge?
+
+  Accessing data in hashes
+
+
+=end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
