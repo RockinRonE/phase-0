@@ -29,6 +29,8 @@ class BingoBoard
     @bingo_board = board
   end
 
+  # set letters of BINGO to their respective array positions
+    # B set to the 0 index, etc 
 
 end
 
