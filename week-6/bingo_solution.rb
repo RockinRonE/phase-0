@@ -1,44 +1,89 @@
 # A Nested Array to Model a Bingo Board SOLO CHALLENGE
 
-# I spent [#] hours on this challenge.
+# I spent 1.5 hours on this challenge.
 
 
 # Release 0: Pseudocode
 # Outline:
 
-# Create a method to generate a letter ( b, i, n, g, o) and a number (1-100)
-  #fill in the outline here
-
-# Check the called column for the number called.
-  #fill in the outline here
-
-# If the number is in the column, replace with an 'x'
-  #fill in the outline here
-
-# Display a column to the console
-  #fill in the outline here
-
-# Display the board to the console (prettily)
-  #fill in the outline here
-
-# Initial Solution
-
 class BingoBoard
+  
+
 
   def initialize(board)
     @bingo_board = board
   end
+  
+ 
+  
+  def bingo_call
+    bingo_letter = [ "B", "I", "N", "G", "O"].sample
+    bingo_number = rand(1..100)
 
-  # set letters of BINGO to their respective array positions
-    # B set to the 0 index, etc 
+    bingo_letter + bingo_number.to_s
+    
+  end
+ 
+  def x_number
+    p bingo_call.split('')
+   
+  
+    bingo_number = rand(1..100)
+    bingo_letter = [ "B", "I", "N", "G", "O"].sample
+    #     case bingo_letter = [ "B", "I", "N", "G", "O"].sample
+    if bingo_letter == "B"
+      @bingo_board.map do |arrays|
+        if arrays [0] == bingo_number
+          arrays[0] = "X"
+       
+        end
+      end
+    
+    elsif bingo_letter == "I"
+      @bingo_board.map do |arrays|
+        if arrays [1] == bingo_number
+          arrays[1] = "X"
+        
+        end
+      end
+    
+    
+    elsif bingo_letter == "N"
+      @bingo_board.map do |arrays|
+        if arrays [2] == bingo_number
+          arrays[2] = "X"
+        
+        end
+      end
+    
+  
+  elsif bingo_letter == "G"
+      @bingo_board.map do |arrays|
+        if arrays [3] == bingo_number
+          arrays[3] = "X"
+        
+        end
+      end
+  
+
+  elsif bingo_letter == "O"
+      @bingo_board.map do |arrays|
+        if arrays [4] == bingo_number
+          arrays[4] = "X"
+        
+        end
+      end
+    end
+    return @bingo_board
+  end
+  
+ 
 
 end
 
-# Refactored Solution
 
+    
 
-
-#DRIVER CODE (I.E. METHOD CALLS) GO BELOW THIS LINE
 board = [[47, 44, 71, 8, 88],
         [22, 69, 75, 65, 73],
         [83, 85, 97, 89, 57],
@@ -47,6 +92,12 @@ board = [[47, 44, 71, 8, 88],
 
 new_game = BingoBoard.new(board)
 
+p new_game.x_number
 
-#Reflection
+
+
+
+
+
+
 
