@@ -70,9 +70,9 @@ require_relative 'state_data'
 #=======================================================================
 
 # DRIVER CODE
- # initialize VirusPredictor for each state
+# initialize VirusPredictor for each state
 
-# STATE_DATA.each do |state, data| 
+# STATE_DATA.each do |state, data|
 #   if state == "Alabama"
 #     p data[:population_density]
 
@@ -82,7 +82,7 @@ require_relative 'state_data'
 
 # p STATE_DATA["Alabama"][:population]
 
-# STATE_DATA.each do |state, data|  
+# STATE_DATA.each do |state, data|
 # state_of_origin = VirusPredictor.new(state, STATE_DATA[state][:population_density], STATE_DATA[state][:population])
 # p state_of_origin.virus_effects
 #    end
@@ -122,7 +122,7 @@ class VirusPredictor
     speed_of_spread
   end
 
-  private #ensures that methods below this are only accessible within the class. 
+  private #ensures that methods below this are only accessible within the class.
 
   def predicted_deaths
 
@@ -130,14 +130,10 @@ class VirusPredictor
 
     when @population_density >= 200
       number_of_deaths = (@population * 0.4).floor
-      when 150..199
-      number_of_deaths = (@population * 0.3).floor
-      when 100..149
-      number_of_deaths = (@population * 0.2).floor
-      when 50..99
-      number_of_deaths = (@population * 0.1).floor
-    else
-      number_of_deaths = (@population * 0.05).floor
+    when 150..199 then number_of_deaths = (@population * 0.3).floor
+    when 100..149 then number_of_deaths = (@population * 0.2).floor
+    when 50..99 then number_of_deaths = (@population * 0.1).floor
+    else number_of_deaths = (@population * 0.05).floor
     end
 
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
@@ -151,16 +147,11 @@ class VirusPredictor
 
     case @population_density #population_density was not DRY
 
-    when @population_density >= 200 
-      speed += 0.5
-    when 150..199
-      speed += 1
-    when 100..149
-      speed += 1.5
-    when 50..99
-      speed += 2
-    else
-      speed += 2.5
+    when @population_density >= 200 then speed += 0.5
+    when 150..199 then speed += 1
+    when 100..149 then speed += 1.5
+    when 50..99 then speed += 2
+    else speed += 2.5
     end
 
     puts " and will spread across the state in #{speed} months.\n\n"
@@ -169,18 +160,18 @@ class VirusPredictor
 
 end
 
-STATE_DATA.each do |state, data|  
+STATE_DATA.each do |state, data|
 
-  # p state 
+  # p state
 
   # p data[:population_density]
 
-# state_of_origin = VirusPredictor.new(state, STATE_DATA[state][:population_density], STATE_DATA[state][:population]).virus_effects
+  # state_of_origin = VirusPredictor.new(state, STATE_DATA[state][:population_density], STATE_DATA[state][:population]).virus_effects
 
-#we pass data as the array and set instance variables to hash values
-state_of_origin = VirusPredictor.new(state, data)
-state_of_origin.virus_effects
-   end
+  #we pass data as the array and set instance variables to hash values
+  state_of_origin = VirusPredictor.new(state, data)
+  state_of_origin.virus_effects
+end
 
 
 #REFLECTION
@@ -212,4 +203,3 @@ What concept did you most solidify in this challenge?
 
 
 =end
-

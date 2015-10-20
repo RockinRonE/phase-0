@@ -4,9 +4,11 @@
 
 // Program Structure
 // Write your own variable and do something to it.
+var myName = "Ronny";
+console.log(myName);
 
-
-
+var favFood = prompt("What's your favorite food?");
+alert("That's my favorite food too!");
 
 // Complete one of the exercises: Looping a Triangle, FizzBuzz, or Chess Board
 
