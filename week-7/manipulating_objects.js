@@ -12,30 +12,51 @@ var terah = {
   weight: 130,
   hairColor: "brown",
   eyeColor: "brown"
-}
+};
 // __________________________________________
 // Write your code below.
 
+var adam = {};
 
+adam.name = "Adam";
+terah.spouse = adam;
+terah.weight = 125;
+delete terah.eyeColor; 
+terah.spouse.spouse = terah;
 
+terah.children = { 
+  carson : { name: "Carson" },
+  carter : { name: "Carter"},
+  colton : { name: "Colton"}
+}
 
-
-
-
-
-
+adam.children = terah.children
+  
 
 
 // __________________________________________
 // Reflection: Use the reflection guidelines
-//
+/*
+What tests did you have trouble passing? What did you do to make it pass? Why did that work?
+
+  The most difficult thing about this assignment wasn't the coding or anything like that. It was understanding the language of the questions! It was confusing as to how to add information, but now I got it and it was a good lesson in JS language. 
+
+How difficult was it to add and delete properties outside of the object itself?
+
+  Not difficult! To delete you simply say delete objName.propName
+
+
+ What did you learn about manipulating objects in this challenge?
+
+  This was a good exercise to put into place what we read about. It solified my understand about how to add and remove data from an object. 
+
 //
 //
 //
 //
 //
 
-
+*/
 // __________________________________________
 // Driver Code:  Do not alter code below this line.
 function assert(test, message, test_number) {
