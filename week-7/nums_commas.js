@@ -38,7 +38,7 @@
 //   revSplitNumber.pop(); 
 //   console.log(revSplitNumber.join(""));
 
-// }
+// };
 
 // separateComma(123456);
 
@@ -66,12 +66,35 @@ var separateComma = function(number) {
   console.log(revSplitNumber.join(""));
   
   
-} 
+};
 separateComma(123456);
 
 // Your Own Tests (OPTIONAL)
 
 
 
-
+/*
 // Reflection
+
+What was it like to approach the problem from the perspective of JavaScript? Did you approach the problem differently?
+
+	It wasn't all that different from using Ruby. We still chose to split and reverse it, etc.
+
+What did you learn about iterating over arrays in JavaScript?
+
+	You use loops instead of "interation" methods if you will. 
+
+What was different about solving this problem in JavaScript?
+
+	Not all that different
+
+What built-in methods did you find to incorporate in your refactored solution?
+
+	We just joined our methods. 
+
+
+
+
+
+
+*/
