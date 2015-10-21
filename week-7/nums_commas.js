@@ -16,31 +16,31 @@
 
 
 // Initial Solution
-var separateComma = function(number) {
+// var separateComma = function(number) {
   
-  if(number.length <= 3) {
-    return number; 
-  }
+//   if(number.length <= 3) {
+//     return number; 
+//   }
 
-  var splitNumber = number.toString().split(""); 
+//   var splitNumber = number.toString().split(""); 
   
   
-  var revSplitNumber = splitNumber.reverse(); 
+//   var revSplitNumber = splitNumber.reverse(); 
   
-  for(var i = 0; i < revSplitNumber.length; i+=4) {
+//   for(var i = 0; i < revSplitNumber.length; i+=4) {
     
-      revSplitNumber.splice(i, 0,",");
-  }
+//       revSplitNumber.splice(i, 0,",");
+//   }
   
-  revSplitNumber.reverse()
+//   revSplitNumber.reverse();
   
   
-  revSplitNumber.pop(); 
-  console.log(revSplitNumber.join(""));
+//   revSplitNumber.pop(); 
+//   console.log(revSplitNumber.join(""));
 
-}
+// }
 
-separateComma(123456);
+// separateComma(123456);
 
 // Refactored Solution
 
@@ -50,9 +50,9 @@ var separateComma = function(number) {
     return number; 
   }
 
-  var splitNumber = number.toString().split("").reverse();
+  var revSplitNumber = number.toString().split("").reverse();
   
-  var revSplitNumber = splitNumber 
+ 
   
   for(var i = 0; i < revSplitNumber.length-2; i+=4) {
     
