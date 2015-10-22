@@ -44,30 +44,35 @@
 
 // Refactored Solution
 
-var separateComma = function(number) {
+// var separateComma = function(number) {
   
-  if(number.length <= 3) {
-    return number; 
-  }
+//   if(number.length <= 3) {
+//     return number; 
+//   }
 
-  var revSplitNumber = number.toString().split("").reverse();
+//   var revSplitNumber = number.toString().split("").reverse();
   
  
   
-  for(var i = 0; i < revSplitNumber.length-2; i+=4) {
+//   for(var i = 0; i < revSplitNumber.length-2; i+=4) {
     
-      revSplitNumber.splice(i, 0,",");
-  }
+//       revSplitNumber.splice(i, 0,",");
+//   }
   
- revSplitNumber.reverse();
-  
-  
-  revSplitNumber.pop(); 
-  console.log(revSplitNumber.join(""));
+//  revSplitNumber.reverse();
   
   
+//   revSplitNumber.pop(); 
+//   console.log(revSplitNumber.join(""));
+  
+  
+// };
+
+//This is the ULTIMATE Refactoring!
+var number = function (num) {
+return num.toLocaleString();
 };
-separateComma(123456);
+console.log(number(123456));
 
 // Your Own Tests (OPTIONAL)
 
