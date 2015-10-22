@@ -74,6 +74,18 @@ console.log(michaelPhelps.name + " " + michaelPhelps.sport + " " + michaelPhelps
 
 
 // Reflection
+/*
+What JavaScript knowledge did you solidify in this challenge?
+
+	Basically the syntax. It's touchy!
+
+What are constructor functions?
+
+	A constructor function is like a piece of reusable code. Instead of creating one object literally, it allows you to create multiple using driver code. 
+
+How are constructors different from Ruby classes (in your research)?
+
+	Ruby only uses objects inherited from a calss to create a new object. In JS you can either define a literal object OR invoke a constructor function to create a new object. 
 
 
 
@@ -88,11 +100,7 @@ console.log(michaelPhelps.name + " " + michaelPhelps.sport + " " + michaelPhelps
 
 
 
-
-
-
-
-
+*/
 
 
 
