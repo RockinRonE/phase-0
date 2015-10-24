@@ -38,10 +38,6 @@ var enemyLaunch = function() {
     enemyLaunchCordX = Math.floor((Math.random() * 5) + 1);
     enemyLaunchCordY = Math.floor((Math.random() * 5) + 1);
 
-    
-
-
-
     if (enemyLaunchCordX === myBase.posX && enemyLaunchCordY === myBase.posY) {
         myBase.health -= 1;
         console.log("You've been hit!");
