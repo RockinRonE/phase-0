@@ -61,3 +61,27 @@ var battle = function() {
 
 
 battle();
+/*
+REFLECTION
+
+What was the most difficult part of this challenge?
+
+    I could not figure out how to store previous X Y coordinates so the game wouldn't repeat those coordinates. I was forced to follow my own time boxing and had to stop working on this due to outside work that I must finish before onsite begins. I am not proud of my work for this exercise. 
+
+What did you learn about creating objects and functions that interact with one another?
+
+    I learned how to call properties of objects and update their values with functions. 
+
+Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
+
+    I did not. 
+
+How can you access and manipulate properties of objects?
+
+    With dot notation....myObj.objProp
+
+*/
+
+
+
+
