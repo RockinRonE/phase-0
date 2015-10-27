@@ -33,7 +33,7 @@ WHERE region_name LIKE '%Central%';
 SELECT regions.region_name, states.state_name FROM regions, states
 ORDER BY states.region_id ASC;
 
-![alt text][database]
+![alt text][database.png]
 
 
 REFLECTION
