@@ -1,12 +1,12 @@
 One-to-one Relationship
 
-![alt text](https://github.com/RockinRonE/phase-0/blob/master/week-8/database-intro/imgs/one-to-one.png)
+![alt text](https://github.com/RockinRonE/phase-0/blob/master/week-8/imgs/one-to-one.png)
 
 I see this as a one-to-one because a Person can only have one cust_num and a cust_num can only belong to one person.
 
 Many to Many
 
-![alt text](https://github.com/RockinRonE/phase-0/blob/master/week-8/database-intro/imgs/many-to-many.png)
+![alt text](https://github.com/RockinRonE/phase-0/blob/master/week-8/imgs/many-to-many.png)
 
 REFLECTION:
 
