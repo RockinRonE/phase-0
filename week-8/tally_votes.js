@@ -298,7 +298,29 @@ console.log(officers);
 // __________________________________________
 // Reflection
 
+//REFACTOR
 
+for(var person in votes) {
+    var persons_votes = votes[person];
+    for(var title in persons_votes){
+        if (typeof voteCount[title][persons_votes[title]] === 'number'){
+            voteCount[title][persons_votes[title]] += 1;
+        }
+        else{
+            voteCount[title][persons_votes[title]] = 1;
+        }
+    }
+}
+for (var office in voteCount){
+    var results = voteCount[office];
+    var max = 0;
+    for (var student in results){
+        if(results[student] > max) {
+            max = results[student];
+            officers[office] = student;
+        }
+    }
+}
 
 
 
