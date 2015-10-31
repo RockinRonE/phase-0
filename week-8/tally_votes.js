@@ -62,37 +62,114 @@ var officers = {
   vicePresident: undefined,
   secretary: undefined,
   treasurer: undefined
-}
+};
 
 // Pseudocode
 
+//Loop through votes to access people's votes
+
+  //Loop through votes and log them to voteCount
+
+  //tally votes to declare winners in officers
+
+//ended up setting votes to 0 and then adding to it
 
 // __________________________________________
 // Initial Solution
  
+//Bob gets 3 votes
+voteCount["president"] = {Bob: 3}
 
-// var bobVote = { Bob: 3 };
-voteCount["president"] = {Bob: 3};
-// console.log(voteCount.president);    
+//Bob gets 2 for vice
+voteCount["vicePresident"] = {Bob: 2}
+
+//Bob 2 votes for secretary 
+voteCount["secretary"] = {Bob: 2}
+
+//Bob 4 treasurer
+voteCount["treasurer"] = {Bob: 4}
+
+  
+//first nested object
+// for(var person in votes) {
+//     var persons_votes = votes[person];
+//     //second obect
+//     for(var title in persons_votes){
+//             //sets votes to 0
+//             voteCount[title][votes[person][title]] = 0;
+//     } 
+// }
+
+// //tallys votes
+// for(var person in votes) {
+//     var persons_votes = votes[person];
+//     for(var title in persons_votes){
+//             //add one everytime
+//             voteCount[title][votes[person][title]] += 1;
+//     } 
+// }
+        
+// for (var office in voteCount){
+   
+//     var results = voteCount[office];
+//     var max = 0;
+//     for (var student in results){
+//         if(results[student] > max) {
+//             max = results[student];
+//             officers[office] = student;
+//         }
+//     }
+// }
 
 
 
 
+// // __________________________________________
+// // Refactored Solution
 
-
-// __________________________________________
-// Refactored Solution
-
-
+// for(var person in votes) {
+//     var persons_votes = votes[person];
+//     for(var title in persons_votes){
+//         if (typeof voteCount[title][persons_votes[title]] === 'number'){
+//             voteCount[title][persons_votes[title]] += 1;
+//         }
+//         else{
+//             voteCount[title][persons_votes[title]] = 1;
+//         }
+//     }
+// }
+// for (var office in voteCount){
+//     var results = voteCount[office];
+//     var max = 0;
+//     for (var student in results){
+//         if(results[student] > max) {
+//             max = results[student];
+//             officers[office] = student;
+//         }
+//     }
+// }
 
 
 
 
 // __________________________________________
 // Reflection
+/*
+What did you learn about iterating over nested objects in JavaScript?
+
+  It takes multiple loops to access nested data. 
 
 
+Were you able to find useful methods to help you with this?
 
+  We weren't. It seemed like the only way to access nested data is through 
+
+
+What concepts were solidified in the process of working through this challenge?
+
+  Using for in loops and bracket notation! 
+
+*/
 
 
 
