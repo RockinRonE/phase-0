@@ -146,48 +146,12 @@ sentence = "I look forward to going to DBC onsite in a week!"
 
 reverse(sentence)
 
-# Refactored Solution
 
 
 
 
 
 # Reflection
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
