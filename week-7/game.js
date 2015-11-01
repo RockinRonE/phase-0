@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 // Design Basic Game Solo Challenge
 
@@ -109,7 +109,7 @@ while(battling) {
 
 
 }
-=======
+
 var myBase = {
 
     posX: Math.floor((Math.random() * 5) + 1),
@@ -195,6 +195,6 @@ How can you access and manipulate properties of objects?
 */
 
 
->>>>>>> game
+
 
 
