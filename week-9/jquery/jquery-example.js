@@ -25,6 +25,8 @@ $(document).ready(function(){
 
 //RELEASE 4: Event Listener
 $('img').on('mouseenter', function(){
+     
+
     $(this).attr('src', 'http://www.heavyharmonies.com/bandpics/COPPERHEAD.JPG');
   });
 $('img').on('mouseleave', function(){
