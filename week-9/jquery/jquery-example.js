@@ -11,27 +11,25 @@ $(document).ready(function(){
 
 //RELEASE 1: DONE
   //Link this script and the jQuery library to the jQuery_example.html file and analyze what this code does. PINK
-$('body').css({'background-color': 'pink'});
+	$('body').css({'background-color': 'pink'});
 
 //RELEASE 2:
   //Add code here to select elements of the DOM
 
-$('.mascot').find('h1').css({'background-color' : 'blue'});
+	$('.mascot').find('h1').css({'background-color' : 'blue'});
 
 //RELEASE 3:
   // Add code here to modify the css and html of DOM elements
 
-$('body > h1').css({'background-color' : 'green','border' : '5px solid white'});
+	$('body > h1').css({'background-color' : 'green','border' : '5px solid white'});
 
 //RELEASE 4: Event Listener
-$('img').on('mouseenter', function(e){
-    e.preventDefault()
-    $(this).attr('src', 'http://www.heavyharmonies.com/bandpics/COPPERHEAD.JPG')
+$('img').on('mouseenter', function(){
+    $(this).attr('src', 'http://www.heavyharmonies.com/bandpics/COPPERHEAD.JPG');
   });
-$('img').on('mouseleave', function(event){
-    event.stopPropagation();
+$('img').on('mouseleave', function(){
     $(this).remove();
-   $('.mascot').find('h1').append('<img src="dbc_logo.png">');
+   $('.mascot').find('h1').after('<img src="dbc_logo.png">');
   });
 
 // put what happen
