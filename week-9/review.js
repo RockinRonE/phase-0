@@ -57,3 +57,27 @@ function printMyList() {
 addToList("bananas", 5); 
 addToList("apples", 15); 
 
+/*     REFLECTION
+
+What concepts did you solidify in working on this challenge? (reviewing the passing of information, objects, constructors, etc.)
+
+	I solified accessing and updating nested arrays. 
+
+
+What was the most difficult part of this challenge?
+
+	It's funny because I remember this GPS being difficult but I don't think it is now. The most difficult of this was understanding how to use the splice method properly.
+
+Did an array or object make more sense to use and why?
+
+	I used an array since it was a simple item/quantity setup. 
+
+
+
+
+
+
+
+
+
+*/ 
